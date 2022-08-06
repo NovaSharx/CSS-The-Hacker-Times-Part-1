@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <title>Hacker Times</title>
 </head>
 
@@ -33,7 +34,7 @@
     <!-- front page article -->
     <main>
       <h2>Have You Tried Turning It On and Off Again?</h2>
-      <h5>By Maurice Moss</h5>
+      <h5 class="author">By Maurice Moss</h5>
       <img src="assets/front-page-article.png" alt="placeholder">
       <p>
         Cupcake ipsum dolor sit amet. Candy gummies jelly-o pie toffee cheesecake pastry cake. Soufflé sesame snaps
@@ -61,6 +62,100 @@
           beans soufflé brownie ...</p>
       </section>
     </div>
+    <div class="more-articles additional">
+      <section>
+        <h4>Global sunlight shortage.</h4>
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="placeholder">
+        <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi
+          bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly
+          beans soufflé brownie ...</p>
+      </section>
+      <section>
+        <h4>China has perfected moon walking.</h4>
+        <img
+          src="https://imgix.ranker.com/list_img_v2/14552/2754552/original/the-first-time-michael-jackson-did-the-moonwalk"
+          alt="placeholder">
+        <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi
+          bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly
+          beans soufflé brownie ...</p>
+      </section>
+      <section>
+        <h4>Is your cheesecake spying on you?</h4>
+        <img src="https://media.gettyimages.com/photos/eating-spaghetti-picture-id157680737?s=612x612"
+          alt="placeholder">
+        <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi
+          bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly
+          beans soufflé brownie ...</p>
+      </section>
+    </div>
+    <footer>
+      <h4 id="footer-title">Hacker Times</h4>
+      <div id="footer-content">
+        <div class="footer-column">
+          <h5 class="footer-topic">NEWS</h5>
+          <a href="#" class="footer-link">Home Page</a>
+          <a href="#" class="footer-link">World</a>
+          <a href="#" class="footer-link">Coronavirus</a>
+          <a href="#" class="footer-link">U.S</a>
+          <a href="#" class="footer-link">Politics</a>
+          <a href="#" class="footer-link">New York</a>
+          <a href="#" class="footer-link">Business</a>
+        </div>
+        <div class="footer-column">
+          <h5 class="footer-topic">OPINION</h5>
+          <a href="#" class="footer-link">Today's Opinion</a>
+          <a href="#" class="footer-link">Columnists</a>
+          <a href="#" class="footer-link">Editorials</a>
+        </div>
+        <div class="footer-column">
+          <h5 class="footer-topic">ARTS</h5>
+          <a href="#" class="footer-link">Today's Arts</a>
+          <a href="#" class="footer-link">Art & Design</a>
+          <a href="#" class="footer-link">Books</a>
+          <a href="#" class="footer-link">Best Sellers Book List</a>
+          <a href="#" class="footer-link">Dance</a>
+        </div>
+        <div class="footer-column">
+          <h5 class="footer-topic">LIVING</h5>
+          <a href="#" class="footer-link">Automotive</a>
+          <a href="#" class="footer-link">Games</a>
+          <a href="#" class="footer-link">Education</a>
+          <a href="#" class="footer-link">Food</a>
+          <a href="#" class="footer-link">Health</a>
+        </div>
+        <div class="footer-column">
+          <h5 class="footer-topic">MORE</h5>
+          <a href="#" class="footer-link">Reader Center</a>
+          <a href="#" class="footer-link">The Athletic</a>
+          <a href="#" class="footer-link">Wirecutter</a>
+          <a href="#" class="footer-link">Cooking</a>
+          <a href="#" class="footer-link">Headway</a>
+          <a href="#" class="footer-link">Live Events</a>
+          <a href="#" class="footer-link">The Learning Network</a>
+        </div>
+        <div class="footer-column subscribe">
+          <h5 class="footer-topic">SUBSCRIBE</h5>
+          <div class="major-subscriptions">
+            <div class="very-major-subscriptions">
+              <a href="#" class="footer-link">Home Delivery</a>
+              <a href="#" class="footer-link">Digital Subscriptions</a>
+              <a href="#" class="footer-link">Games</a>
+              <a href="#" class="footer-link">Cooking</a>
+            </div>
+            <a href="#" class="footer-link">Email Newsletters</a>
+            <a href="#" class="footer-link">Corporate Subscriptions</a>
+          </div>
+          <div class="other-subscriptions">
+            <a href="#" class="footer-link">Mobile Applications</a>
+            <a href="#" class="footer-link">Replica Edition</a>
+            <a href="#" class="footer-link">International</a>
+            <a href="#" class="footer-link">Canada</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 

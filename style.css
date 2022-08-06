@@ -25,7 +25,7 @@ h1 {
     text-align: center;
 }
 
-h1, h5 {
+h1, .author {
     font-family: "Abril Fatface";
 }
 
@@ -33,11 +33,18 @@ h2, h4 {
     font-family: "Roboto Slab";
 }
 
-h5 {
+.additional h4 {
+    min-height: 3em;
+}
+
+.author {
     color: #dd3232;
 }
 
 nav {
+    position: sticky;
+    top: 0em;
+    background-color: white;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
 }
@@ -48,7 +55,6 @@ main {
 
 section {
     display: inline-block;
-    width: 300px;
     padding: 0em 1em;
 }
 
@@ -76,4 +82,64 @@ p {
 
 img {
     width: 100%;
+}
+
+.additional img {
+    object-fit: cover;
+    height: 6em;
+    background-position: center center;
+}
+
+footer {
+    border-top: 3px double lightgray;
+}
+
+#footer-title {
+    font-family: "Abril Fatface";
+    margin: 0em 0em 1em 0em;
+}
+
+#footer-content {
+    display: flex;
+}
+
+.footer-column {
+    width: 100%;
+}
+
+.subscribe {
+    padding-left: 0.5em;
+    border-left: 2px solid #eee;
+}
+
+.other-subscriptions a:first-child {
+    padding-top: 1em;
+}
+
+.major-subscriptions {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #eee;
+}
+
+.very-major-subscriptions a {
+    color: black;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.footer-topic {
+    font-size: 10px;
+    margin: 0;
+    padding: 0.2em 0em;
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 0.2em 0em;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
