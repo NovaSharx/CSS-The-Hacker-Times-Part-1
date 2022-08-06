@@ -88,6 +88,7 @@ img {
     object-fit: cover;
     height: 6em;
     background-position: center center;
+    filter: grayscale(100%);
 }
 
 footer {
